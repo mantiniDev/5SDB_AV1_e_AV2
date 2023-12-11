@@ -1,0 +1,44 @@
+﻿** Destaques
+     Tabelas que serão recriadas com os dados migrados
+       [dbo].[escola]
+     Índices clusterizados que serão removidos
+       Nenhum
+     Índices clusterizados que serão criados
+       Nenhum
+     Possíveis problemas de dados
+       O tipo da coluna daNasc na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR
+         (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo
+          VARCHAR (50) NULL.
+       O tipo da coluna email na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR
+         (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo
+          VARCHAR (50) NULL.
+       O tipo da coluna endereço na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para 
+         VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis
+         com o tipo  VARCHAR (50) NULL.
+       O tipo da coluna Id na tabela [dbo].[escola] é  NVARCHAR (50) NOT NULL no momento, mas está sendo alterado para  VARCHAR
+         (50) NOT NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o
+         tipo  VARCHAR (50) NOT NULL.
+       O tipo da coluna matricula na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para 
+         VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis
+         com o tipo  VARCHAR (50) NULL.
+       O tipo da coluna nome na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR
+         (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo
+          VARCHAR (50) NULL.
+       O tipo da coluna sexo na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR
+         (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo
+          VARCHAR (50) NULL.
+
+** Ações do usuário
+     Recriar tabela
+       [dbo].[escola] (Tabela)
+
+** Ações de suporte
+
+O tipo da coluna daNasc na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+O tipo da coluna email na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+O tipo da coluna endereço na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+O tipo da coluna Id na tabela [dbo].[escola] é  NVARCHAR (50) NOT NULL no momento, mas está sendo alterado para  VARCHAR (50) NOT NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NOT NULL.
+O tipo da coluna matricula na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+O tipo da coluna nome na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+O tipo da coluna sexo na tabela [dbo].[escola] é  NVARCHAR (50) NULL no momento, mas está sendo alterado para  VARCHAR (50) NULL. Pode ocorrer perda de dados e a implantação poderá falhar se a coluna contiver dados incompatíveis com o tipo  VARCHAR (50) NULL.
+

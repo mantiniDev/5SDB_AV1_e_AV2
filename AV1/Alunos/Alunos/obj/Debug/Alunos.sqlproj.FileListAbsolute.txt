@@ -1,0 +1,6 @@
+C:\Users\manti\source\repos\Alunos\Alunos\bin\Debug\Alunos.dacpac
+C:\Users\manti\source\repos\Alunos\Alunos\bin\Debug\Alunos.dll
+C:\Users\manti\source\repos\Alunos\Alunos\bin\Debug\Alunos.pdb
+C:\Users\manti\source\repos\Alunos\Alunos\obj\Debug\Alunos.sqlproj.AssemblyReference.cache
+C:\Users\manti\source\repos\Alunos\Alunos\obj\Debug\Alunos.dll
+C:\Users\manti\source\repos\Alunos\Alunos\obj\Debug\Alunos.pdb
