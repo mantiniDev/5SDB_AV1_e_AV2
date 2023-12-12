@@ -11,7 +11,7 @@ using sistemaAlunos.Data;
 namespace sistemaAlunos.Migrations
 {
     [DbContext(typeof(SistemaTarefasDBContex))]
-    [Migration("20231211151727_DBinitial")]
+    [Migration("20231212033037_DBinitial")]
     partial class DBinitial
     {
         /// <inheritdoc />
@@ -44,7 +44,7 @@ namespace sistemaAlunos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Aluno_Coruja");
+                    b.ToTable("corujaAlunos");
                 });
 
             modelBuilder.Entity("sistemaAlunos.Models.DisciplinaCoruja", b =>
@@ -69,7 +69,7 @@ namespace sistemaAlunos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Disciplina_Coruja");
+                    b.ToTable("corujaDisciplina");
                 });
 #pragma warning restore 612, 618
         }

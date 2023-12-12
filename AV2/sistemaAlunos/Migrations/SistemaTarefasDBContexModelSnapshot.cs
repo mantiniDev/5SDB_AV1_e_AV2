@@ -41,7 +41,7 @@ namespace sistemaAlunos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Aluno_Coruja");
+                    b.ToTable("corujaAlunos");
                 });
 
             modelBuilder.Entity("sistemaAlunos.Models.DisciplinaCoruja", b =>
@@ -66,7 +66,7 @@ namespace sistemaAlunos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Disciplina_Coruja");
+                    b.ToTable("corujaDisciplina");
                 });
 #pragma warning restore 612, 618
         }

@@ -18,18 +18,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<SistemaTarefasDBContex>(
+builder.Services.AddEntityFrameworkSqlServer().AddDbContext<SistemaTarefasDBContex>(
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 builder.Services.AddScoped<IAlunoRepositorio, AlunoRepossitorio>();
 
-// Configuração da cultura invariante
-builder.Services.Configure<RequestLocalizationOptions>(options =>
-{
-    options.DefaultRequestCulture = new RequestCulture(CultureInfo.InvariantCulture);
-    options.SupportedCultures = new[] { CultureInfo.InvariantCulture };
-    options.SupportedUICultures = new[] { CultureInfo.InvariantCulture };
-});
 
 var app = builder.Build();
 

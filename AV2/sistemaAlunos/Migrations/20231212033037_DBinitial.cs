@@ -11,7 +11,7 @@ namespace sistemaAlunos.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Aluno_Coruja",
+                name: "corujaAlunos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,11 +21,11 @@ namespace sistemaAlunos.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Aluno_Coruja", x => x.Id);
+                    table.PrimaryKey("PK_corujaAlunos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Disciplina_Coruja",
+                name: "corujaDisciplina",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -36,7 +36,7 @@ namespace sistemaAlunos.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Disciplina_Coruja", x => x.Id);
+                    table.PrimaryKey("PK_corujaDisciplina", x => x.Id);
                 });
         }
 
@@ -44,10 +44,10 @@ namespace sistemaAlunos.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Aluno_Coruja");
+                name: "corujaAlunos");
 
             migrationBuilder.DropTable(
-                name: "Disciplina_Coruja");
+                name: "corujaDisciplina");
         }
     }
 }

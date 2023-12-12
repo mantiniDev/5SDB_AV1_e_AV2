@@ -10,8 +10,8 @@ namespace sistemaAlunos.Data
         {
         }
 
-        public DbSet<AlunosCoruja> Aluno_Coruja { get; set; }        
-        public DbSet<DisciplinaCoruja> Disciplina_Coruja { get; set; }
+        public DbSet<AlunosCoruja> corujaAlunos { get; set; }        
+        public DbSet<DisciplinaCoruja> corujaDisciplina { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

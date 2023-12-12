@@ -14,17 +14,17 @@ namespace sistemaAlunos.Repositorios
         }
         public async Task<AlunosCoruja> BuscarPorId(int id)
         {
-            return await _dBContex.Aluno_Coruja.FirstOrDefaultAsync(x => x.Id == id);
+            return await _dBContex.corujaAlunos.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<AlunosCoruja>> BuscarTodosAluno()
         {
-            return await _dBContex.Aluno_Coruja.ToListAsync();
+            return await _dBContex.corujaAlunos.ToListAsync();
         }
 
         public async Task<AlunosCoruja> Adicionar(AlunosCoruja aluno)
         {
-            await _dBContex.Aluno_Coruja.AddAsync(aluno);    
+            await _dBContex.corujaAlunos.AddAsync(aluno);    
             await _dBContex.SaveChangesAsync();
 
             return aluno;
@@ -41,7 +41,7 @@ namespace sistemaAlunos.Repositorios
             alunoPorID.nome = aluno.nome;
             alunoPorID.email = aluno.email;
 
-            _dBContex.Aluno_Coruja.Update(alunoPorID);
+            _dBContex.corujaAlunos.Update(alunoPorID);
             await _dBContex.SaveChangesAsync();
 
             return alunoPorID;
@@ -55,7 +55,7 @@ namespace sistemaAlunos.Repositorios
                 throw new Exception($"Usuário por ID: {id} não foi encontrado no banco de dados.");
             }
 
-            _dBContex.Aluno_Coruja.Remove(alunoPorID);
+            _dBContex.corujaAlunos.Remove(alunoPorID);
             await _dBContex.SaveChangesAsync();
 
             return true;    
